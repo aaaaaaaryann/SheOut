@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap');
+*{
+  text-decoration: none;
+}
+body {
+    margin: 0;
+    background-color: #FBF7D3;
+   
+}
+
+.button {
+  border-radius: 50px;
+  background-color: #333;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 28px;
+  border: 1px solid;
+  padding: 1em 2em;
+  font-size: 1em; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.left_container {
+  flex: 1;
+  padding: 20px;
+  font-family: 'Zilla Slab', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+
+
+.image-slider {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border: none;
+  outline: none;
+  z-index: 2;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.text {
+  font-family: 'Zilla Slab', serif;
+  position: relative;
+  text-align: center;
+  padding: 1em 2em;
+  font-size: 2vw; 
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .left_container, .image-slider {
+    height: 100%;
+  }
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s;
+  
+}
+
+.product-card:hover {
+  transform: translateY(-80px);
+}
+
+.product-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.product-card h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  text-decoration: none;
+  color: black;
+}
+
+.product-card p {
+  font-size: 1em;
+  color: #333;
+  text-decoration: none;
+}
+
+.card-button {
+  font-family: 'Zilla Slab', serif;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 28px;
+  border: 1px solid;
+  padding: 7px 22px;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  margin: 0 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #007bff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #f1f1f1;
+  border-color: #007bff;
+}
+
+.pagination a.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+#about{
+  margin: 50px;
+}
+.about_us {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #F9F5EA;
+}
+
+.text-column {
+  font-family: 'Zilla Slab', serif;
+  width: 40%;
+  padding: 20px;
+  margin: 30px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+ 
+}
+
+.image-column {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.image-column img {
+  width: 100%;
+ height: 100%;
+  object-fit: cover; 
+}
+
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      height: auto; 
+  }
+  .text-column, .image-column {
+      width: 100%;
+      padding: 10px;
+  }
+  .text-column {
+      order: 2; 
+  }
+  .image-column {
+      order: 1; 
+  }
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+ padding-top: 30px;
+ 
+}
+.product-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+
+
+
+
+.discovery {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.discovery .dis {
+  border-radius: 50px;
+  background-color: #333;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 28px;
+  border: 1px solid;
+  padding: 1em 2em;
+  font-size: 1em; 
+  text-decoration: none;
+}

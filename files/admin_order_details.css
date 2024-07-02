@@ -1,0 +1,291 @@
+body {
+    font-family: 'Zilla Slab', serif;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.order-info, .order-items {
+    margin-bottom: 20px;
+}
+.order-info{
+    float: right;
+    width: 35%;
+    margin-right: 150px;
+    padding: 30px;
+    border: 1px solid #000000;
+    background-color: rgb(255,253,253);
+}
+.usercontent{
+    display: flexbox;
+    align-items: center;
+}
+.order-items{
+    float: left;
+    width: 50%;
+}
+
+.order-info table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+ .order-info td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #CDBEBE
+}
+
+
+
+.order-times,.actions{
+    display: flex;
+    align-items: center;
+}
+.order-info p, .order-items p, .actions p {
+    margin: 0 0 10px;
+}
+.order-items img {
+    width: 100px;
+    height: 120px;
+}
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+}
+button.cancel {
+    background-color: #dc3545;
+}
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.breadcrumb-item {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 5px;
+    white-space: nowrap;
+}
+
+.breadcrumb-item:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    margin: 0 5px;
+    color: #6c757d;
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .breadcrumb {
+        font-size: 0.9rem;
+    }
+    
+    .breadcrumb-item {
+        margin: 0 3px;
+    }
+    
+    .breadcrumb-separator {
+        margin: 0 3px;
+    }
+}
+
+@media (max-width: 400px) {
+    .breadcrumb {
+        font-size: 0.8rem;
+    }
+    
+    .breadcrumb-item {
+        margin: 0 2px;
+    }
+    
+    .breadcrumb-separator {
+        margin: 0 2px;
+    }
+}
+
+.item{
+    border-bottom: 1px solid #ddd;
+}
+.contentright{
+   margin: 20px;
+    float: right;
+}
+
+.order-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 20px;
+  
+    padding: 10px;
+}
+
+.item img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.contentright {
+    flex: 1;
+}
+
+.contentright table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.contentright th, .contentright td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.contentright th {
+   
+    text-align: left;
+}
+
+
+.mods{
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+}
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancelled textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-size: 16px;
+  
+}
+
+
+
+.texts{
+width: 100%;
+height: 50%;
+}
+   #cancellationModal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+
+        #cancellationModalContent {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .closes {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .closes:hover,
+        .closes:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }

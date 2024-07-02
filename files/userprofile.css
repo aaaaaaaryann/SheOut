@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zilla Slab', serif; 
+}
+
+body {
+    background-color: #FBF7D3;
+    font-family: 'Zilla Slab', serif; 
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; 
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    
+}
+
+.navbar {
+    background-color: #FBF7D3;
+    width: 250px;
+    padding: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 15px 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+.subheading{
+   
+    text-align: justify;
+    text-justify: inter-word;
+   
+}
+.content {
+    flex: 1;
+
+    margin-bottom: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .toggle-btn {
+        display: block; 
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar.active {
+        display: block; 
+    }
+
+    .content {
+        flex: none;
+    }
+}
+
+.content-section {
+    display: none;
+}
+
+#home {
+    display: block;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .popup-content {
+        width: 90%;
+    }
+
+   
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .leftbox, .rightbox  {
+    float: left;
+    width: 49%;
+    padding: 10px;
+    background-color: #ffffff;
+    
+  }  
+  .leftbox {    
+    margin-right: 2%;
+}
+  .columns::after {
+    content: "";
+    display: table;
+    clear: both;
+    justify-content: space-between;
+  }
+  
+  .midbox{
+   
+    overflow: scroll;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+
+  
+  
+  .column_profile > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    font-size: 30px;
+  }
+ 
+  .form-container {
+    height: 50px;
+    position: relative;
+    width: 60%;
+    margin: 20px;
+}
+
+.input {
+    border-radius: 13px;
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 60%;
+    outline: 0;
+    padding: 20px;
+    width: 100%;
+}
+.inputs {
+    border-radius: 13px;
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 60%;
+    outline: 0;
+    padding: 20px;
+    width: 100%;
+}
+.input[readonly] {
+    background-color: #999999; 
+    color: #000000; 
+    border: 1px solid #cccccc; 
+}
+.input.editable {
+    background-color: #ffffff; 
+    color: #000000; 
+    border: 1px solid #000000; 
+}
+  
+ 
+
+.button {
+    background-color: #FA7B44; 
+    border: none; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none;   
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+     border-radius: 8px;
+    
+}
+
+.button:hover {
+    background-color: #e98154; 
+    color: black; 
+    
+}
+  
+.updatepass{
+    height: 10%;
+    width: 40%;
+   
+}
+  
+
+
+
+  
+  
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .tab button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+.items_info{
+    margin: 10px;
+  
+    padding: 20px;
+}
+
+.order-side{
+ 
+    display: flex;
+}
+.order-image{
+    float: left;
+   
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order-info{
+    float: right;
+    width: 70%;
+    margin-left:20px ;
+    
+    
+   
+}
+.tabinfo {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tabinfo th, .tabinfo td {
+   
+    padding: 13px;
+    text-align: left;
+}
+
+
+
+.order-item {
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding:20px;
+    border: 1px solid #ddd;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-details {
+    float: right;
+    width: 80%; 
+}
+
+.product-name, .product-price, .product-quantity {
+    margin: 5px 0;
+}
+
+.total-amount {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.side{
+    margin: 20px;
+   float: left;
+   width: 10%;
+   font-family: 'Zilla Slab', serif; 
+   
+}
+.profiler{
+    
+    float: right;
+    width: 80%;
+    margin: 30px;
+    padding: 30px;
+    background: #ffffff;
+}
+.footer{
+    clear: both;
+}
+.butt{
+    border: none;
+    cursor: pointer;
+    
+    background-color:#FBF7D3;
+    font-size: 20px;
+}
+.active{
+    border-bottom: 1px solid;
+}

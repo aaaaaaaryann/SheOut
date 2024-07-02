@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap');
+body {
+    background-color: #FBF7D3;
+    font-family: 'Zilla Slab', serif;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    font-size: 1em;
+    font-family: 'Zilla Slab', serif;
+}
+
+.filters {
+    float: left;
+    width: 20%;
+    padding: 50px;
+    height: 100%;
+}
+
+.filter_inside {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.filterings {
+    font-family: 'Zilla Slab', serif;
+    background-color: #FBF7D3;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2em;
+    transition: 0.4s;
+}
+
+.filterings:after {
+    content: '+';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.filter_content {
+    font-family: 'Zilla Slab', serif;
+    padding: 0 18px;
+    list-style-type: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 1.5em;
+}
+
+.filter_content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.filter_content li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.filter_content input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.sort-options {
+    margin-top: 20px;
+}
+
+.sort-options label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.card-container {
+    max-width: 100%;
+    justify-content: start;
+    padding: 60px;
+    font-family: 'Zilla Slab', serif;
+}
+
+.card-row {
+    height: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.image-row img {
+    width: 80%;
+    height: 45%;
+}
+
+.price_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-row {
+    padding: 10px 0px 20px 5px;
+    flex: 1;
+}
+
+.title-row h3 {
+    margin: 0;
+    font-size: 1.3em;
+    color: #000000;
+    text-align: left;
+}
+
+.description-row p {
+    margin: -8px 0 0 0;
+    font-size: 1em;
+    color: #f57224;
+    text-align: right;
+    flex: 1;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-button {
+    font-family: 'Zilla Slab', serif;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 28px;
+    border: 1px solid;
+    padding: 7px 22px;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.candlerows {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px; 
+    padding: 10px;
+}
+
+.candlerows > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #CDBEBE;
+    text-align: center;
+    height: 80%;
+    max-width: 200px;
+    
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background-color: #f57224;
+    color: #fff;
+    border: 1px solid #f57224;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,66 @@
+*{
+    font-family: 'Zilla Slab', serif; 
+}
+body {
+    font-family: 'Zilla Slab', serif; 
+    margin: 0;
+    padding: 0;
+   
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    margin-bottom: 20px;
+}
+.card-header {
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+}
+.card-body {
+    padding: 15px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+  
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-primary {
+    background-color: #000000;
+}
+.btn-success {
+    background-color: #28a745;
+}
+.btn-primary:focus, .btn-success:focus {
+    outline: none;
+}
+.form-text {
+    color: #6c757d;
+}
+.error-message {
+    color: red;
+}
+.success-message {
+    color: green;
+}

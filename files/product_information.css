@@ -1,0 +1,324 @@
+body {
+    background-color: #FBF7D3;
+    font-family: 'Zilla Slab', serif; 
+    margin: 0;
+    padding: 0;
+    
+}
+
+.whole {
+    margin: 50px;
+    padding: 40px;
+}
+
+.carousel {
+    float: left;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.carousel .main-image {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #bbb;
+    padding-left: 100px;
+    padding-right: 100px;
+    object-fit: contain;
+    background: #ffffff;
+}
+
+.carousel-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.carousel-thumbnails img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+    border: 1px solid #bbb;
+}
+
+.carousel-thumbnails img.active {
+    opacity: 1;
+    border: 1px solid #000000;
+}
+
+.carousel-thumbnails img:hover {
+    opacity: 0.7;
+}
+
+.product-details {
+    text-align: center;
+    float: right;
+    width: 45%;
+    padding: 10px;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.product-details form {
+    margin-top: 20px;
+}
+
+.product-details input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.product-details input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   width: 200px;
+}
+.product-details input[type="submit"]:hover {
+    background-color: #505357;
+}
+
+.tabs {
+   padding: 20px;
+    clear: both; 
+}
+.tablink {
+    background-color: #FBF7D3;
+    color: black;
+    border: none;
+    padding: 14px 16px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    font-family: 'Zilla Slab', serif; 
+}
+
+
+.tablink.active {
+    border-bottom: 1px solid;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border-top: none;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+#Description, #Reviews {
+   margin: 20px;
+    background: #fefdf2;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #mainImage {
+    cursor: pointer;
+  }  
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.breadcrumb-item {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 5px;
+    white-space: nowrap;
+}
+
+.breadcrumb-item:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    margin: 0 5px;
+    color: #6c757d;
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .breadcrumb {
+        font-size: 0.9rem;
+    }
+    
+    .breadcrumb-item {
+        margin: 0 3px;
+    }
+    
+    .breadcrumb-separator {
+        margin: 0 3px;
+    }
+}
+
+@media (max-width: 400px) {
+    .breadcrumb {
+        font-size: 0.8rem;
+    }
+    
+    .breadcrumb-item {
+        margin: 0 2px;
+    }
+    
+    .breadcrumb-separator {
+        margin: 0 2px;
+    }
+}
+.revcontents{
+    margin-left: 30px;
+    margin-right: 30px;
+   
+    padding: 20px;
+   
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    color: #007bff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: white;
+}   .fa-star, .fa-star-half-o, .fa-star-o {
+    color: #FFD700;
+}
+.checked {
+    color: #FFD700;
+}
+.tabcontent {
+    display: none;
+}
+.tabcontent.active {
+    display: block;
+}
+.tablinks {
+    background-color: #FBF7D3;
+    color: black;
+    border: none;
+    padding: 14px 16px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    font-family: 'Zilla Slab', serif;
+}
+.tablinks.active {
+    border-bottom: 1px solid;
+}
+.revcontents {
+    margin-left: 30px;
+}
+
+.rating-tabs button {
+    background: #fefdf2;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-right: 5px;
+}
+.rating-tabs button.active {
+    border-bottom: 1px solid;
+}

@@ -1,0 +1,57 @@
+*{
+    font-family: 'Zilla Slab', serif;
+}
+.cardarea{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #bbb;
+    margin-bottom: 20px;
+    padding-top: 20px;
+
+    
+}
+.card{
+    width: 100%;
+}
+
+.foot{
+    text-decoration: none;
+    color: white;
+}
+.table-container {
+            margin-top: 30px;
+        }
+        table.dataTable thead {
+            background-color: #343a40;
+            color: white;
+        }
+        table.dataTable tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        .dataTables_wrapper .dataTables_filter {
+            float: right;
+            text-align: right;
+        }
+        .dataTables_wrapper .dataTables_paginate .paginate_button {
+            padding: 0.5em 1em;
+        }
+
+.pay,.pend,.low{
+    border: 1px solid #bbb;
+    padding: 20px;
+    margin-bottom: 20px;
+   
+}
+.grids {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+   
+    margin: 0 auto;  
+}
+
+.column {
+    display: grid;
+    gap: 20px;
+}
